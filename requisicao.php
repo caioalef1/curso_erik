@@ -20,6 +20,8 @@
     }
     mysqli_close($conn); //fecha conexão com o banco
 
+    
+
 ?>
 </body>
 </html>
