@@ -18,20 +18,12 @@
       <input type="text" class="form-control" name='name' placeholder="Ex: Caio Alef" require>
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1">Data de nascimento</label>
-      <input type="date" class="form-control" name="age" placeholder="Ex: 02/02/1994" require>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1" >Cidade que você mora</label>
-      <input type="text" class="form-control" name="city" placeholder="Ex: Feira de Santana" require>
-    </div>
-    <div class="form-group">
       <label for="exampleInputEmail1" >Email</label>
-      <input type="email" class="form-control" name="email" placeholder="Ex: caioalefonline@gmail.com" require>
+      <input type="email" class="form-control" name="mail" placeholder="Ex: caioalef@hotmail.com" require>
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1" >Senha</label>
-      <input type="password" class="form-control" name="senha" require>
+      <input type="password" class="form-control" name="password" require>
     </div>
     <button type="submit" class="btn btn-secondary" name="enviar" >Enviar</button>
   </form>

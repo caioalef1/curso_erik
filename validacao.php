@@ -6,11 +6,11 @@ require_once("seguranca.php");
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   // Salva duas variáveis com o que foi digitado no formulário
   // Detalhe: faz uma verificação com isset() pra saber se o campo foi preenchido
-  $login = (isset($_POST['login'])) ? $_POST['login'] : '';
+  $usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
   $senha = (isset($_POST['senha'])) ? $_POST['senha'] : '';
 
   // Utiliza uma função criada no seguranca.php pra validar os dados digitados
-  if (validaUsuario($login, $senha) == true) {
+  if (validaUsuario($usuario, $senha) == true) {
     // O usuário e a senha digitados foram validados, manda pra página interna
     header("Location: index.php");
   } else {
@@ -19,3 +19,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     expulsaVisitante();
   }
 }
+
+?>
